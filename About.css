@@ -1,0 +1,410 @@
+body{
+	top: 0;
+	left: 0;
+	margin: 0;
+    font-family: Georgia, serif;
+	display: flex;
+	flex-direction: column;
+	background-color: #00203f;
+	
+}
+.container{
+	background: #00203f url("Home_book2.jpg") no-repeat fixed center;
+	min-height: 650px;
+	  width: auto;
+	  background-size: cover;
+}
+.header{
+	display: flex;
+	
+	flex-direction: row;
+
+}
+.Site-name{
+	font-family: 'Oxanium',serif;
+	transition: transform  0.6s;
+	font-size: 4.2rem;
+	font-weight: 600;
+	padding-left: 5%;
+	padding-top: 10px;
+	color: white;
+	text-shadow: 1px 1.5px black;
+	padding-bottom: 6px;
+}
+.Site-name span{
+	color: #ec4d37;
+	font-size: 6rem;
+}
+
+.navbar{
+	z-index: 1;
+	display: flex;
+	padding-top: 60px;
+	padding-bottom: 6px;
+	background-color: transparent;
+	flex-direction: row-reverse;
+	transition: transform 0.6s;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#nav-Home:after{
+	content: "Home";
+}
+#nav-About:after{
+	content: "About";
+}
+#nav-Subject:after{
+	content: "Subject ";
+}
+#nav-NPTEL:after{
+	content: "NPTEL";
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	align-content: stretch;
+	flex-shrink: 1;
+
+}
+.navbar ul li{
+	padding:0 10px;
+	font-size: 1.5rem;
+	flex-shrink: 1;
+}
+
+.navbar ul li a{
+	font-size: 1.5rem;
+	padding: 0rem;
+	text-decoration: none;
+	color:honeydew;
+
+	font-weight: 600;
+	display: flex;
+	position: relative;
+	transition: background 0.8;
+}
+
+.navbar ul li a:hover {
+	color:#cc4d37;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	border-bottom: 0.5px solid #ec4d37; 
+}
+
+
+.navbar ul li a:active {
+	color:#00203f;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	border-bottom: 2px solid #101820; 
+}
+.submenu {
+
+  display: flex;
+  position: absolute;
+ flex-direction: column;
+}
+.submenu  li{
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+
+#menu .submenu  li a{
+	font-size: 1.1rem;
+}
+
+
+#menu:hover .submenu li{
+  display: block;
+  font-size: 1rem;
+  position: relative;
+  padding:1px 4px;
+  padding-top: 6px;
+  z-index: 1;
+}
+
+#menu:hover .submenu{
+	font-size: 1rem;
+	background-color: transparent;
+	opacity: 0.8;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 450px){
+
+.navbar {
+	padding-top: 25px;
+	font-size: 1.5rem;
+	padding-left: 2px;
+}
+.navbar ul li a{
+	font-size: 1.25rem;
+}
+
+#menu .submenu  li a{
+	font-size: 0.75rem;
+}
+.Site-name{
+	font-size: 2rem;
+	padding-left: 3%;
+}
+.Site-name span{
+	font-size: 2.5rem;
+}
+#nav-Home:after,#nav-About:after,#nav-Subject:after,#nav-NPTEL:after{
+ content: "";
+}
+}
+
+.About_site{
+	margin: 10% 20%;  
+}
+article{
+	display: flex;
+	flex-direction: column;
+}
+.About_site div{
+	border: 5px solid #ec4d37;
+	border-radius:40px 15px;
+	margin: 30px;
+	padding: 0 10px ; 
+
+}
+.About_site div h1{
+	color: #efa355;
+	font-size: 2.2rem;
+}
+.About_site div p{
+	color: white;
+	font-size: 1.2rem;
+	padding:0 5%;
+}
+
+.introduction{
+	background-color:transparent;
+	font-family: 'Oxanium',serif;
+	transition: transform  0.6s;
+	font-size: 7rem;
+	font-weight: 600;
+	padding-left: 5%;
+	margin-top: 10%;
+	color: white;
+	text-shadow: 1px 1.5px black;
+	padding-bottom: 6px;
+}
+
+.introduction:after{
+	content: "";	
+	animation-name:intro;
+	animation-duration: 6s;
+	animation-delay: 1s;
+	animation-iteration-count: 2;	
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.22, 0.72, 1, 1);
+}
+
+
+@keyframes intro {
+
+	5%{
+		content: "A";
+		border-right: 2px solid #ec4d37;
+	}
+	10%{
+		content: "Ab";
+		border-right: 2px solid #ec4d37;
+	}
+	18%{
+		content: "Abo";
+		border-right: 2px solid #ec4d37;
+	}
+
+	25%{
+		content: "Abou";
+		border-right: 2px solid #ec4d37;
+	}
+	30%{
+		content: "About";
+		border-right: 2px solid #ec4d37;
+	}
+
+	35%{
+		content: "About ";
+		border-right: 2px solid #ec4d37;
+	}
+	40%{
+		content: "About U";
+		border-right: 2px solid #ec4d37;
+	}
+	45%{
+		content: "About Us";
+		border-right: 2px solid #ec4d37;
+	}
+	50%{
+		content: "About U";
+		border-right: 2px solid #ec4d37;
+	}
+	55%{
+		content: "About ";
+		border-right: 2px solid #ec4d37;
+	}
+	60%{
+		content: "About N";
+		border-right: 2px solid #ec4d37;
+	}
+	65%{
+		content: "About No";
+		border-right: 2px solid #ec4d37;
+	}
+	70%{
+		content: "About Not";
+		border-right: 2px solid #ec4d37;
+	}
+	75%{
+		content: "About Noti";
+		border-right: 2px solid #ec4d37;
+	}
+	80%{
+		content: "About Notiy";
+		border-right: 2px solid #ec4d37;
+	}
+	85%{
+		content: "About Notiya";
+		border-right: 2px solid #ec4d37;
+	}
+	90%{
+		content: "About Notiyap";
+		border-right: 2px solid #ec4d37;
+	}
+	95%{
+		content: "About Notiyapa";
+		border-right: 2px solid #ec4d37;
+	}
+	100%{
+		content: "About Notiyapa.";	
+	}
+
+}
+
+.footer{
+	font-family: 'Oxanium',serif;
+	background-color: #101820;
+	padding:1rem 2rem;
+	color: #efa355;
+	font-weight: 600;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	color: white;
+	justify-content: space-around;
+}
+.footer ul{
+	text-align: left;
+	
+	flex-shrink: 3;
+}
+.footer ul li a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+.footer ul li a:hover{
+	opacity: 0.6;
+	
+}
+.footer ul li{
+	list-style: none;
+	padding-top: 8px;
+}
+.Subjects, .engg-branch,#My_Footer{
+	/*display: flex;
+	flex-direction: column;
+	*/margin: 2%;
+}
+#My_name span{
+	font-size: 3rem;
+}
+#My_Footer_site_name{
+	font-size: 1.8rem;
+	color: White;
+}
+#My_Footer_site_name span{
+	font-size: 2.5rem;
+}
+.footer div #My_name{
+	font-size: 2rem;
+	color: white;
+	border-bottom: 5px dotted #ec4d37;
+	 
+}
+.Copyright{
+	margin-top: 8px;
+	font-size: 0.75rem;
+}
+.footer span{
+	color: #ec4d37;
+	opacity: 0.8;
+	font-size: 1.8rem;
+	
+}
+
+#Developed_By{
+	font-size: 1rem;
+	color: white;
+
+}
+.Subjects .footer-heading ,.engg-branch .footer-heading {
+	font-size: 1.5rem; 
+}
+@media screen and (max-width: 450px){
+.footer ul li a{
+	font-size: 60%;
+}
+.footer-heading{
+	font-size: 90%;
+} 
+.footer span{
+	font-size: 1.15rem;
+}
+.Copyright{
+	font-size: 0.6rem;
+}
+
+.footer div #My_name{
+	font-size: 1.25rem;
+	color: white;
+	border-bottom: 3px dotted #ec4d37;
+	 
+}
+#My_Footer{
+	font-size: 0.9rem;
+}
+#Developed_By{
+	font-size: 0.6rem;
+}
+.About_site{
+	margin: 0;
+}
+.About_site div h1{
+	font-size: 1.6rem;
+}
+.About_site div p{
+	font-size: 1rem;
+}
+.introduction{
+	font-size: 2.85rem;
+	padding-top: 200px;
+}
+
+
+
+}

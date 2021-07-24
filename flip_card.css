@@ -1,0 +1,278 @@
+lllbody{
+	top: 0;
+	left: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+
+.navbar{
+	display: flex;
+	padding-top:10px;
+	padding-bottom: 6px;
+	background-color: black;
+	flex-direction: row-reverse;
+	width: 100%;
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	flex-basis: 25%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: space-around;
+	flex-shrink: 1;
+
+}
+.navbar ul li{
+	padding: 0;
+	font-size: 1.2rem;
+	flex-basis: 28%;
+	flex-shrink: 1;
+}
+
+.navbar ul li a{
+	padding: 0.1rem;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	display: flex;
+	position: relative;
+	transition: background 0.4s;
+}
+
+#menu{
+	flex-basis: 35%;
+}
+
+
+.navbar ul li a:hover {
+
+	display: flex;
+	text-align: none;
+	background-color:white;
+	color: black;
+	font-weight: bold;
+	border-radius: 5px;
+	justify-content: center;
+
+}
+
+
+
+.submenu {
+  display: flex;
+  position: absolute;
+ flex-direction: column;
+}
+
+
+.submenu  li{
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+.submenu li {
+  position: relative;
+}
+
+#menu:hover .submenu li{
+  display: block;
+  position: relative;
+  background-color:black;
+  color: black;
+  padding: 4px;
+ 
+}
+
+#menu:hover .submenu{
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 800px){
+
+.navbar ul li{
+	padding: 2px;
+	font-size: 1rem;
+	
+}
+}
+
+
+
+
+.content {
+	display: flex;
+	flex:1;
+	
+}
+
+.left-sidebar{
+	background-color:honeydew;
+	flex-basis: 16%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding: 0.1rem;
+
+}
+
+.left-sidebar h3{
+	text-align: center;
+	background-color: #f1f1f1;
+}
+
+
+#menu-topic:hover {
+  background-color:black;
+  color: white;
+  font-size:120%;
+}
+
+
+#menu-topic {
+  display: block;
+  text-decoration: none;
+  color: black;
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 3px;
+  padding-left: 9px;
+
+}
+
+
+.main-content{
+ display: flex;
+ flex-basis: auto;
+ background-color: skyblue;
+ flex-grow: 3;
+ flex-shrink: 2;
+ padding: 0.1rem;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+.description{
+	display: block;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+}
+
+.flip-card {
+	margin: 1rem;
+  background-color: transparent;
+  width: 260px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  }
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.card, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+	display: flex;
+	flex-direction: column;
+	flex:1;
+	max-width: 260px;
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 360px;
+  margin: 0.5rem;
+  text-align: center;
+ }
+
+
+
+.card button,#back_pdf {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.card button a,#back_pdf a{
+  text-decoration: none;
+  color: white;
+  border: none;
+}
+
+.card button:hover ,#back_pdf:hover{
+  opacity: 0.7;
+}
+
+.card ul{
+	flex:1;
+  list-style: none;
+}
+
+.card span{
+  font-weight: 600;
+}
+
+.right-content{
+	flex-basis: 12%;
+	flex-grow: 1;
+	flex-shrink: 3;
+	padding: 0.1rem; 
+}
+
+.footer{
+	background-color: black;
+	padding: 0.3rem;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 824px){
+.card{
+	max-width: 200px;
+}
+}
+
+
+
+@media screen and (max-width: 1090px){
+.card{
+	max-width: 200px;
+}
+}

@@ -1,0 +1,35 @@
+ #Main-content
+ {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: space-around;
+ }
+#pdf-card{
+	padding: 5px;
+	background-color: #f0f0f0;
+	text-align: center;
+	width: 33%;
+	margin:5px; 
+	display: inline-flex;
+}
+
+#pdf-card h2{
+	text-align: center;
+	padding: 8px;
+	display: flex;
+}
+
+#pdf-card  a p{
+	text-decoration: none;
+	color: white;
+
+}
+
+#pdf-card a img{
+	width: 100%;
+	object-fit: cover;
+}
+
+#pdf-card:hover{
+	background-color: #ddd;
+}

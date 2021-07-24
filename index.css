@@ -1,0 +1,808 @@
+body{
+	top: 0;
+	left: 0;
+	margin: 0;
+    font-family: Georgia, serif;
+	display: flex;
+	flex-direction: column;
+	background-color: #00203f;
+}
+
+.introduction_background{
+	  background: #00203f url("Home_book2_c.jpeg") no-repeat fixed center;
+	  min-height: 650px;
+	  width: auto;
+	  background-size: cover;
+}
+.header{
+	display: flex;
+	flex-direction: row;
+}
+.Site-name{
+	font-family: 'Oxanium',serif;
+	transition: transform  0.6s;
+	font-size: 4.2rem;
+	font-weight: 600;
+	padding-left: 5%;
+	padding-top: 10px;
+	color: white;
+	text-shadow: 1px 1.5px black;
+	padding-bottom: 6px;
+}
+.Site-name span{
+	color: #ec4d37;
+	font-size: 6rem;
+}
+
+.navbar{
+	z-index: 1;
+	display: flex;
+	padding-top: 60px;
+	padding-bottom: 6px;
+	background-color: transparent;
+	flex-direction: row-reverse;
+	transition: transform 0.6s;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#nav-Home:after{
+	content: "Home";
+}
+#nav-About:after{
+	content: "About";
+}
+#nav-Subject:after{
+	content: "Subject ";
+}
+#nav-NPTEL:after{
+	content: "NPTEL";
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: stretch;
+	flex-shrink: 1;
+
+}
+.navbar ul li{
+	padding:0 10px;
+	font-size: 1.5rem;
+	flex-shrink: 1;
+}
+
+.navbar ul li a{
+	font-size: 1.5rem;
+	padding: 0rem;
+	text-decoration: none;
+	color:honeydew;
+
+	font-weight: 600;
+	display: flex;
+	position: relative;
+	transition: background 0.8;
+}
+
+.navbar ul li a:hover {
+	color:#cc4d37;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	border-bottom: 0.5px solid #ec4d37; 
+}
+
+
+.navbar ul li a:active {
+	color:#00203f;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	border-bottom: 2px solid #101820; 
+}
+.submenu {
+
+  display: flex;
+  position: absolute;
+ flex-direction: column;
+}
+.submenu  li{
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+
+#menu .submenu  li a{
+	font-size: 1.1rem;
+}
+
+
+#menu:hover .submenu li{
+  display: block;
+  font-size: 1rem;
+  position: relative;
+  padding:1px 4px;
+  padding-top: 6px;
+  z-index: 1;
+}
+
+#menu:hover .submenu{
+	font-size: 1rem;
+	background-color: transparent;
+	opacity: 0.8;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 850px){
+
+.navbar {
+	padding-top: 25px;
+	font-size: 1.5rem;
+	padding-left: 2px;
+}
+.navbar ul li a{
+	font-size: 1.25rem;
+}
+.navbar li{
+	padding: 20px 0;
+}
+
+#menu .submenu  li a{
+	font-size: 0.75rem;
+}
+.Site-name{
+	font-size: 2rem;
+	padding-left: 3%;
+}
+.Site-name span{
+	font-size: 2.5rem;
+}
+#nav-Home:after,#nav-About:after,#nav-Subject:after,#nav-NPTEL:after{
+ content: "";
+}
+}
+
+.introduction{
+	background-color:transparent;
+	font-family: 'Oxanium',serif;
+	transition: transform  0.6s;
+	font-size: 7rem;
+	font-weight: 600;
+	padding-left: 5%;
+	margin-top: 10%;
+	color: white;
+	text-shadow: 1px 1.5px black;
+	padding-bottom: 6px;
+}
+
+.introduction:after{
+	content: "";
+	
+	animation-name:intro;
+	animation-duration: 25s;
+	animation-delay: 0.6s;
+	animation-iteration-count: 1;	
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.22, 0.72, 1, 1);
+
+
+
+
+}
+
+
+@keyframes intro {
+
+	2%{
+		content: "La";
+		border-right: 2px solid #ec4d37;
+	}
+	3%{
+		content: "Las";
+		border-right: 2px solid #ec4d37;
+	}
+	4%{
+		content: "Last";
+		border-right: 2px solid #ec4d37;
+	}
+
+	5%{
+		content: "Last ";
+		border-right: 2px solid #ec4d37;
+	}
+	6%{
+		content: "Last N";
+		border-right: 2px solid #ec4d37;
+	}
+
+	7%{
+		content: "Last No";
+		border-right: 2px solid #ec4d37;
+	}
+	8%{
+		content: "Last Not";
+		border-right: 2px solid #ec4d37;
+	}
+
+	9%{
+		content: "Last Note";
+		border-right: 2px solid #ec4d37;
+	}
+
+	10%{
+		content: "Last No";
+		border-right: 2px solid #ec4d37;
+	}
+
+	11%{
+		content: "Last N";
+		border-right: 2px solid #ec4d37;
+	}
+
+	12%{
+		content: "Last Ni";
+		border-right: 2px solid #ec4d37;
+	}
+	13%{
+		content: "Last Nig";
+		border-right: 2px solid #ec4d37;
+	}
+	14%{
+		content: "Last Nigh";
+		border-right: 2px solid #ec4d37;
+	}
+	16%{
+		content: "Last Night";
+		border-right: 2px solid #ec4d37;
+	}
+	18%{
+		content: "Last Night F";
+		border-right: 2px solid #ec4d37;
+	}
+
+	19%{
+		content: "Last Night Fo";
+		border-right: 2px solid #ec4d37;
+	}
+
+	20%{
+		content: "Last Night For";
+		border-right: 2px solid #ec4d37;
+	}
+	21%{
+		content: "Last Night For N";
+		border-right: 2px solid #ec4d37;
+	}
+	22%{
+		content: "Last Night For No";
+		border-right: 2px solid #ec4d37;
+	}
+	23%{
+		content: "Last Night For Not";
+		border-right: 2px solid #ec4d37;
+	}
+	24%{
+		content: "Last Night For Note";
+		border-right: 2px solid #ec4d37;
+	}
+	25%{
+		content: "Last Night For Not";
+		border-right: 2px solid #ec4d37;
+	}
+	26%{
+		content: "Last Night For No";
+		border-right: 2px solid #ec4d37;
+	}
+
+	27%{
+		content: "Last Night For N";
+		border-right: 2px solid #ec4d37;
+	}
+
+	29%{
+		content: "Last Night For E";
+		border-right: 2px solid #ec4d37;
+	}
+	30%{
+		content: "Last Night For Ex";
+		border-right: 2px solid #ec4d37;
+	}
+
+	31%{
+		content: "Last Night For Ex";
+		border-right: 2px solid #ec4d37;
+	}
+
+	33%{
+		content: "Last Night For Exa";
+		border-right: 2px solid #ec4d37;
+	}
+	34%{
+		content: "Last Night For Exam";
+		border-right: 2px solid #ec4d37;
+	}
+	36%{
+		content: "Last Night For Exam??";
+		border-right: 2px solid #ec4d37;
+	}
+	40%{
+		content: "";
+		border-right: 2px solid #ec4d37;
+	}
+	
+	42%{
+		content: "S";
+		border-right: 2px solid #ec4d37;
+	}
+	42%{
+		content: "Se";
+		border-right: 2px solid #ec4d37;
+	}
+
+	43%{
+		content: "See";
+		border-right: 2px solid #ec4d37;
+	}
+	44%{
+		content: "Seek";
+		border-right: 2px solid #ec4d37;
+	}
+	45%{
+		content: "Seeki";
+		border-right: 2px solid #ec4d37;
+	}
+	46%{
+		content: "Seekin";
+		border-right: 2px solid #ec4d37;
+	}
+	47%{
+		content: "Seeking";
+		border-right: 2px solid #ec4d37;
+	}
+	48%{
+		content: "Seeking F";
+		border-right: 2px solid #ec4d37;
+	}
+	49%{
+		content: "Seeking Fo";
+		border-right: 2px solid #ec4d37;
+	}
+
+	50%{
+		content: "Seeking For";
+		border-right: 2px solid #ec4d37;
+	}
+	51%{
+		content: "Seeking For N";
+		border-right: 2px solid #ec4d37;
+	}
+	52%{
+		content: "Seeking For No";
+		border-right: 2px solid #ec4d37;
+	}
+	53%{
+		content: "Seeking For Not";
+		border-right: 2px solid #ec4d37;
+	}
+
+	54%{ 
+		content: "Seeking For Noti";
+		border-right: 2px solid #ec4d37;
+	}
+	55%{ 
+		content: "Seeking For Notiy";
+		border-right: 2px solid #ec4d37;
+	}
+	56%{ 
+		content: "Seeking For Notiya";
+		border-right: 2px solid #ec4d37;
+	}
+	57%{ 
+		content: "Seeking For Notiyap";
+		border-right: 2px solid #ec4d37;
+	}
+	58%{ 
+		content: "Seeking For Notiyapa";
+		border-right: 2px solid #ec4d37;
+	}
+
+	59%{ 
+		content: "Seeking For Notiya";
+		border-right: 2px solid #ec4d37;
+	}
+	60%{ 
+		content: "Seeking For Noti";
+		border-right: 2px solid #ec4d37;
+	}
+	61%{ 
+		content: "Seeking For Not";
+		border-right: 2px solid #ec4d37;
+	}
+	62%{ 
+		content: "Seeking For Note";
+		border-right: 2px solid #ec4d37;
+	}
+	63%{ 
+		content: "Seeking For Notes";
+		border-right: 2px solid #ec4d37;
+	}
+
+	64%{ 
+		content: "Seeking For Notes!";
+		border-right: 2px solid #ec4d37;
+	}
+	65%{ 
+		content: "Seeking For Notes!!";
+		border-right: 2px solid #ec4d37;
+	}
+	67%{ 
+		content: "";
+		border-right: 2px solid #ec4d37;
+	}
+	68%{ 
+		background-color: transparent;
+		content: "N";
+		border-right: 2px solid #ec4d37;
+	}
+
+	69%{ 
+		background-color: transparent;
+		content: "No";
+		border-right: 2px solid #ec4d37;
+	}
+	70%{ 
+		content: "Not";
+		border-right: 2px solid #ec4d37;
+	}
+
+	71%{ 
+		content: "Note";
+		border-right: 2px solid #ec4d37;
+	}
+	72%{ 
+		content: "Notes";
+		border-right: 2px solid #ec4d37;
+	}
+	73%{ 
+		content: "Notes ";
+		border-right: 2px solid #ec4d37;
+	}
+
+	74%{ 
+		content: "Notes a";
+		border-right: 2px solid #ec4d37;
+	}
+	75%{ 
+		content: "Notes ar";
+		border-right: 2px solid #ec4d37;
+	}
+	76%{ 
+		content: "Notes are ";
+		border-right: 2px solid #ec4d37;
+	}
+	77%{ 
+		content: "Notes are h";
+		border-right: 2px solid #ec4d37;
+	}
+	78%{ 
+		content: "Notes are he";
+		border-right: 2px solid #ec4d37;
+	}
+	79%{ 
+		content: "Notes are her";
+		border-right: 2px solid #ec4d37;
+	}
+	80%{ 
+		content: "Notes are here";
+		border-right: 2px solid #ec4d37;
+	}
+	81%{ 
+		content: "Notes are here.";
+		border-right: 2px solid #ec4d37;
+	}
+	82%{ 
+		content: "";
+		border-right: 2px solid #ec4d37;
+	}
+
+	83%{
+		background-color: transparent; 
+		content: "N";
+		border-right: 2px solid #ec4d37;
+	}
+
+	84%{
+		background-color: transparent; 
+		content: "No";
+		border-right: 2px solid #ec4d37;
+	}
+
+	85%{
+		background-color: transparent; 
+		content: "Not";
+		border-right: 2px solid #ec4d37;
+	}
+	86%{
+		background-color: transparent; 
+		content: "Noti";
+		border-right: 2px solid #ec4d37;
+	}
+	87%{
+		background-color: transparent; 
+		content: "Notiy";
+		border-right: 2px solid #ec4d37;
+	}
+	84%{
+		background-color: transparent; 
+		content: "Notiya";
+		border-right: 2px solid #ec4d37;
+	}
+	85%{ 
+		content: "Notiyap";
+		border-right: 2px solid #ec4d37;
+	}
+	86%{ 
+		content: "Notiyapa";
+		border-right: 2px solid #ec4d37;
+	}
+	87%{ 
+		content: "Notiyapa.";
+		border-right: 2px solid #ec4d37;
+	}
+	88%{ 
+		content: "Notiyapa. ";
+		border-right: 2px solid #ec4d37;
+	}
+	89%{ 
+		content: "Notiyapa. i ";
+		border-right: 2px solid #ec4d37;
+	}
+
+	91%{ 
+		content: "Notiyapa. is";
+		border-right: 2px solid #ec4d37;
+	}
+
+	92%{ 
+		content: "Notiyapa. is ";
+		border-right: 2px solid #ec4d37;
+	}
+
+	93%{ 
+		content: "Notiyapa. is h";
+		border-right: 2px solid #ec4d37;
+	}
+	95%{ 
+		content: "Notiyapa. is he";
+		border-right: 2px solid #ec4d37;
+	}
+
+	97%{ 
+		content: "Notiyapa. is her";
+		border-right: 2px solid #ec4d37;
+	}
+	99%{ 
+		content: "Notiyapa. is here";
+		border-right: 2px solid #ec4d37;
+	}
+
+	100%{ 
+		content: "Notiyapa. is here";
+	}
+
+}
+
+
+.service{
+	margin:0 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 0.5px;
+	background-color: #00203f;
+	text-align: center;
+	border: 5px solid transparent;
+	padding: 10px;
+}
+.service h1{
+	color: #ec4d37;
+	font-size: 4rem;
+	text-shadow:3px 6px  rgba(0,0,0,0.3);
+}
+#Engineering_Notes,#NPTEL{
+	flex-basis: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	color: honeydew;
+	padding: 30px;
+	margin: 10px 2px;
+	border: 8px solid #cc4d37;
+	border-radius: 50px 15px;
+}
+#Engineering_Notes p,#NPTEL p{
+	padding: 0 8%;	
+	text-align: center;
+}
+
+
+
+
+.Enngg_branch #Engineering-Branch{
+	font-size: 2rem;
+}
+.Enngg_branch #Branch-name{
+	font-size: 1.4rem;
+	color: #efa355;
+}
+#Engineering_Notes #engg-notes{
+	font-size: 2.2rem;
+}
+
+.index-Subjects .index-sub-names{
+
+	font-size: 1.2rem;
+	border-bottom: 2px solid #efa355;
+}
+
+.index-Subjects ol {
+	color: honeydew;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-indent: 0;
+	text-align: left;
+	padding: 0 22%;
+}
+
+#NPTEL h2{
+	font-size: 2rem;
+	color: #ec4d37;
+	text-shadow:3px 6px  rgba(0,0,0,0.3);
+}
+.index-Subjects ol li{
+	padding: 5px 0;
+}
+.index-Subjects ol li a{
+	text-decoration: none;
+	color: white;
+}
+.index-Subjects ol li a:hover{
+	opacity: 0.7;
+}
+
+@media screen and (max-width: 550px){
+	
+.service{
+	margin: 0;
+}
+.service h1{
+	font-size: 3rem;
+}
+#Engineering_Notes p,#NPTEL p{
+	padding: 5%;
+}
+.Enngg_branch #Engineering-Branch{
+	font-size: 1.8rem;
+}
+.Enngg_branch #Branch-name{
+	font-size: 1.25rem;
+}
+#Engineering_Notes #engg-notes{
+	font-size: 2.15rem;
+}
+.index-Subjects .index-sub-names{
+	font-size: 1rem;
+}
+.index-Subjects ol{
+	padding: 0 8%;
+}
+}
+
+.footer{
+	font-family: 'Oxanium',serif;
+	background-color: #101820;
+	padding:1rem 2rem;
+	color: #efa355;
+	font-weight: 600;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	color: white;
+	justify-content: space-around;
+}
+.footer ul{
+	text-align: left;
+	
+	flex-shrink: 3;
+}
+.footer ul li a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+.footer ul li a:hover{
+	opacity: 0.6;
+	
+}
+.footer ul li{
+	list-style: none;
+	padding-top: 8px;
+}
+.Subjects, .engg-branch,#My_Footer{
+	/*display: flex;
+	flex-direction: column;
+	*/margin: 2%;
+}
+#My_name span{
+	font-size: 3rem;
+}
+#My_Footer_site_name{
+	font-size: 1.8rem;
+	color: White;
+}
+#My_Footer_site_name span{
+	font-size: 2.5rem;
+}
+.footer div #My_name{
+	font-size: 2rem;
+	color: white;
+	border-bottom: 5px dotted #ec4d37;
+	 
+}
+.Copyright{
+	margin-top: 8px;
+	font-size: 0.75rem;
+}
+.footer span{
+	color: #ec4d37;
+	opacity: 0.8;
+	font-size: 1.8rem;
+	
+}
+
+#Developed_By{
+	font-size: 1rem;
+	color: white;
+
+}
+.Subjects .footer-heading ,.engg-branch .footer-heading {
+	font-size: 1.5rem; 
+}
+@media screen and (max-width: 450px){
+
+.introduction{
+	margin-top:25%; 
+	font-size: 3.85rem;
+}
+.footer ul li a{
+	font-size: 60%;
+}
+.footer-heading{
+	font-size: 90%;
+} 
+.footer span{
+	font-size: 1.15rem;
+}
+.Copyright{
+	font-size: 0.6rem;
+}
+
+.footer div #My_name{
+	font-size: 1.25rem;
+	color: white;
+	border-bottom: 3px dotted #ec4d37;
+	 
+}
+#My_Footer{
+	font-size: 0.9rem;
+}
+#Developed_By{
+	font-size: 0.6rem;
+}
+
+}

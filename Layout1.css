@@ -1,0 +1,246 @@
+body{
+	top: 0;
+	left: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+
+.navbar{
+	display: flex;
+	padding: 0.5rem;
+	background-color: black;
+	flex-direction: row-reverse;
+	position: fixed;
+	width: 100%;
+}
+
+#site-name{
+	color: white;
+	font-weight: bold;
+	float: left;
+	left: 0;
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	flex-basis: 25%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: space-around;
+	flex-shrink: 1;
+
+}
+.navbar ul li{
+	padding: 0;
+	font-size: 1.2rem;
+	flex-basis: 28%;
+	flex-shrink: 1;
+}
+
+.navbar ul li a{
+	padding: 0.1rem;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	display: flex;
+	position: relative;
+	transition: background 0.4s;
+}
+
+#menu{
+	flex-basis: auto;
+}
+
+
+.navbar ul li a:hover {
+
+	display: flex;
+	text-align: none;
+	background-color:white;
+	color: black;
+	font-weight: bold;
+	border-radius: 5px;
+	justify-content: center;
+
+}
+
+
+
+.submenu {
+  display: flex;
+  position: absolute;
+ flex-direction: column;
+}
+
+
+.submenu  li{
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+.submenu li {
+  position: relative;
+}
+
+#menu:hover .submenu li{
+  display: block;
+  position: relative;
+  background-color:black;
+  color: black;
+  padding: 4px;
+ 
+}
+
+#menu:hover .submenu{
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 800px){
+
+.navbar ul li{
+	padding: 2px;
+	font-size: 1rem;
+	
+}
+}
+
+
+
+
+.content {
+	display: flex;
+	flex:1;
+	margin-top: 20px;
+}
+
+.left-sidebar{
+	background-color:honeydew;
+	flex-basis: 16%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding: 0.1rem;
+
+}
+
+.left-sidebar h3{
+	text-align: center;
+	background-color: #f1f1f1;
+}
+
+
+#menu-topic:hover {
+  background-color:black;
+  color: white;
+  font-size:120%;
+}
+
+
+#menu-topic {
+  display: block;
+  text-decoration: none;
+  color: black;
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 3px;
+  padding-left: 9px;
+
+}
+
+
+.main-content{
+ display: flex;
+ flex-basis: 69%;
+ background-color: skyblue;
+ flex-grow: 3;
+ flex-shrink: 2;
+ padding: 0.1rem;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+.description{
+	display: block;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 260px;
+  margin: 0.5rem;
+  text-align: center;
+ }
+
+
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.card button a{
+	text-decoration: none;
+	color: white;
+	border: none;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card ul{
+	list-style: none;
+}
+
+.card span{
+	font-weight: 600;
+}
+
+.right-content{
+	flex-basis: 15%;
+	flex-grow: 1;
+	flex-shrink: 3;
+	padding: 0.1rem; 
+}
+
+.footer{
+	background-color: black;
+	padding: 0.3rem;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 824px){
+.card{
+	max-width: 200px;
+}
+}
+
+
+
+@media screen and (max-width: 1090px){
+.card{
+	max-width: 200px;
+}
+}

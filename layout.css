@@ -1,0 +1,130 @@
+body{
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+
+
+#navbar{
+	display: block;
+	background-color: #3cb371;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+}
+
+#navbar span{
+	font-size: 24px;
+	padding: 1.66%;
+	font-weight: 700;
+	text-align: center;
+	display: inline-block;
+	color: white;
+}
+#navbar a{
+	float: right;
+	font-size: 20px;
+	padding: 1.66%;
+	display: block;
+	text-decoration: none;
+	color: white;
+	height: 100%;
+}
+
+#navbar a:hover{
+	font-weight: 800;
+	font-size: 120%;
+	font-color: #66cc66;
+}
+
+#content{
+	justify-content: center;
+	display: inline-table;
+}
+#content::after{
+	content: "";
+	display: flex;
+	/*clear: both;*//*
+	height: 100%;*/
+} 
+
+#content #Leftsidebar{
+	overflow: auto;
+	width: 20%;
+	float: left;
+	background-color: #f0f0f0;
+	
+}
+
+#content #Main-content{ 
+	width: auto;
+	display: block;
+	background-color: none;
+	float: left; 
+}
+
+#content #Rightsidebar{
+	width: 20%;
+	float: right;
+	right: 0;
+	background-color: #f0f0f0;
+}
+
+.sidebarbox{
+	width: 85%;
+	background-color: none;
+	padding: 5%;
+	margin: 2%;
+	font-size: 80%;
+
+}
+
+#baranchor{
+	text-decoration:none; 
+	background-color: #f0f0f0;
+}
+
+#baranchor .sidebarbox h2,p
+{
+	color: #000000;
+	font-weight: 900;
+}
+
+#baranchor .sidebarbox:hover{
+	background-color: lightgray;
+	text-decoration:none; 
+
+}
+
+#baranchor::visited{
+	background-color: #66aa66;
+	text-decoration:none; 
+}
+
+#baranchor::active{
+	background-color: blue;
+	text-decoration:none; 
+}
+
+#Footer
+{
+margin-top:0.5%;
+background-color:gray;
+text-align:center;
+padding:0.5%;
+bottom: 0px;
+position: fixed;
+/*display: flex;*/
+width: 100%;
+}
+
+#Footer #Footer-heading{
+	text-align: center;
+	font-color: white;
+
+}
